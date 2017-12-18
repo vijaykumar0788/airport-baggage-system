@@ -1,0 +1,67 @@
+{
+	"info": {
+		"name": "airport-baggage-routing",
+		"_postman_id": "69ca12f7-66ca-c0fd-0edd-2016746c1721",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "text-baggageRouteProcessing",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "username",
+							"value": "user",
+							"type": "string"
+						},
+						{
+							"key": "password",
+							"value": "user",
+							"type": "string"
+						},
+						{
+							"key": "saveHelperData",
+							"type": "any"
+						},
+						{
+							"key": "showPassword",
+							"value": false,
+							"type": "boolean"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "text/plain"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "# Section: Conveyor System\nConcourse_A_Ticketing A5 5\nA5 BaggageClaim 5\nA5 A10 4\nA5 A1 6\nA1 A2 1\nA2 A3 1\nA3 A4 1\nA10 A9 1\nA9 A8 1\nA8 A7 1\nA7 A5 1\nA7 A6 1\n# Section: Departures\nUA10 A1 MIA 08:00\nUA11 A1 LAX 09:00\nUA12 A1 JFK 09:45\nUA13 A2 JFK 08:30\nUA14 A2 JFK 09:45\nUA15 A2 JFK 10:00\nUA16 A3 JFK 09:00\nUA17 A4 MHT 09:15\nUA18 A5 LAX 10:15\n# Section: Bags\n0001 Concourse_A_Ticketing UA12\n0002 A5 UA17\n0003 A2 UA10\n0004 A8 UA18\n0005 A7 ARRIVAL"
+				},
+				"url": {
+					"raw": "http://patapl-DNY7F72.cable.comcast.com:8080/baggage/retrieveBaggageRoute",
+					"protocol": "http",
+					"host": [
+						"patapl-DNY7F72",
+						"cable",
+						"comcast",
+						"com"
+					],
+					"port": "8080",
+					"path": [
+						"baggage",
+						"retrieveBaggageRoute"
+					]
+				},
+				"description": "test"
+			},
+			"response": []
+		}
+	]
+}
