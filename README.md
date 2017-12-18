@@ -19,19 +19,19 @@ Output: The optimized route for each bag
 ```
 
 # Usage:
-1. git clone https://github.com/vijaykumar0788/airport-baggage-system.git
-2. cd airport-baggage-system;
-3. gradlew clean build
-4. java -jar airport-baggage-system-0.0.1-SNAPSHOT.jar
-5. import src\main\resources\airport-baggage-routing.postman_collection.json in postman and execute text-baggageRouteProcessing
+1. ``git clone https://github.com/vijaykumar0788/airport-baggage-system.git``
+2. ``cd airport-baggage-system``
+3. ``gradlew clean build``
+4. execute ``java -jar airport-baggage-system-0.0.1-SNAPSHOT.jar`` in Command Prompt.
+   This will start the application. 
+5. import ``src\main\resources\airport-baggage-routing.postman_collection.json`` in postman and execute ``text-baggageRouteProcessing`` 
    text-baggageRouteProcessing will execute retrieveBaggageRoute operation of BaggageController and return the response.
 6. It is recommended but not compulsory to follow Step 5, user can choose their own method to test using various other options.
 
-Note : Controller is implemented with BasicAuth, check below properties in application.properties for the details. 
-	   
+Note : Controller is implemented with BasicAuth, check below properties in application.properties for the details.
+
 	   security.user.name
 	   security.user.password
 	      
-	   
 # Shortest Path Algorithm Reference (Dijkstra's algorithm)
-https://en.wikipedia.org/wiki/Dijkstra%27s_algorithm
+``https://en.wikipedia.org/wiki/Dijkstra%27s_algorithm``
