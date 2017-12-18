@@ -14,12 +14,12 @@
 					"basic": [
 						{
 							"key": "username",
-							"value": "user",
+							"value": "admin",
 							"type": "string"
 						},
 						{
 							"key": "password",
-							"value": "user",
+							"value": "admin",
 							"type": "string"
 						},
 						{
