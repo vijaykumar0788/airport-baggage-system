@@ -17,7 +17,7 @@ Section 3: Bag list Format:
 Output: The optimized route for each bag
 ```
 <Bag_Number> <point_1> <point_2> [<point_3>, …] : <total_travel_time>
-
+```
 
 # Usage:
 1. git clone https://github.com/vijaykumar0788/airport-baggage-system.git
